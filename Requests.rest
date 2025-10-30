@@ -1,0 +1,14 @@
+### Submit new score
+
+POST http://localhost:3000/score/submit
+Content-Type: application/json
+
+{
+    "name": "luna",
+    "score": 45
+}
+
+
+### Get leaderboard (Top 10 entries)
+GET http://localhost:3000/score/leaderboard
+Accept: application/json
