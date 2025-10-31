@@ -15,7 +15,7 @@ export function validateScore(req, res, next) {
     name = name.trim().slice(0, 10);
 
     if (!/^[A-Za-z]+$/.test(name)) {
-      return errorResponse("Name can only contain letters")
+      return errorResponse(res, "Name can only contain letters")
     }
     name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
